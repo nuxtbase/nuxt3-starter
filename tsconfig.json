@@ -1,0 +1,11 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "nuxt-windicss",
+      "@pinia/nuxt",
+      "@nuxt/types",
+      "@nuxtjs/i18n"
+    ]
+  }
+}
