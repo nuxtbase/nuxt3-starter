@@ -82,7 +82,7 @@
               Use Pinia manage Store <button class="text-primary px-2 py-1 bg-sky-dark focus:outline-transparent rounded-sm" @click="counterStore.increment">Counter {{ counterStore.n }}</button>
             </li>
             <li>
-              Create a Serverless Functions in <a class="text-primary hover:underline" href="api/hello?name=world" target="_blank">server/api.ts</a>
+              Create a Serverless Functions in <a class="text-primary hover:underline" href="api/hello?name=World" target="_blank">server/api.ts</a>
               <code>{{ data }}</code>
             </li>
           </ul>

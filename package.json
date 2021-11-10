@@ -9,13 +9,13 @@
   },
   "devDependencies": {
     "@iconify/json": "^1.1.416",
-    "@pinia/nuxt": "^0.0.6",
-    "nuxt-windicss": "^2.0.1",
+    "@pinia/nuxt": "^0.1.2",
+    "nuxt-windicss": "^2.0.12",
     "nuxt3": "latest",
-    "unplugin-icons": "^0.12.16",
-    "unplugin-vue-components": "^0.15.6"
+    "unplugin-icons": "^0.12.18",
+    "unplugin-vue-components": "^0.17.2"
   },
   "dependencies": {
-    "pinia": "^2.0.0-rc.13"
+    "pinia": "^2.0.2"
   }
 }
