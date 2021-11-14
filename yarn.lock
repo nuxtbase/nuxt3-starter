@@ -3868,7 +3868,7 @@ nuxt-windicss@^2.0.12:
     windicss-analysis "^0.3.4"
     windicss-webpack-plugin "^1.5.6"
 
-nuxt3@3.0.0-27277498.850ef69:
+nuxt3@latest:
   version "3.0.0-27277498.850ef69"
   resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27277498.850ef69.tgz#73b9e6fa141bc1fab74d179fe829cf883dbb7290"
   integrity sha512-SjI89zVFyaonDs5IZed2KHpZJsmILOiSsBoGJ75QkXtXmOyylb7/HDczXgiHQoe15Rz9774anJ79UVuky13Buw==
@@ -4157,7 +4157,7 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pinia@^2.0.3:
+pinia@^2.0.4:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.3.tgz#4acb55e5cab16c6d19d97051fa6c96c6d78938d2"
   integrity sha512-jNq+eVCAbFQS/uOiqskSRsKsFzLcQpgegcpjI8eAzU3QOwmsdLLHZBE1dvy802jecRC3FPPJSlj1MISF/sRV2w==
