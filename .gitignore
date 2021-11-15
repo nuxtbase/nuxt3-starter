@@ -3,3 +3,6 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
+yarn.lock
+.github
+

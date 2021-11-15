@@ -4,7 +4,6 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    'Carbon:4kFilled': typeof import('~icons/carbon/4k-filled')['default']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
   }
 }
