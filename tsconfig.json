@@ -5,7 +5,6 @@
       "nuxt-windicss",
       "@pinia/nuxt",
       "@nuxt/types",
-      "@nuxtjs/i18n"
     ]
   }
 }
