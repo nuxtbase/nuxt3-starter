@@ -111,6 +111,9 @@
             <carbon:sun class="h-5 w-5" v-if="isDark" />
             <carbon:moon class="h-5 w-5" v-else />
           </button>
+          <button class="text-primary px-2 py-1 bg-sky-darker dark:bg-sky-dark focus:outline-transparent rounded-sm" @click="e => gotoGitHub()">
+            <carbon:logo-github class="h-5 w-5" />
+          </button>
         </div>
       </div>
     </div>
@@ -150,5 +153,9 @@ const toggleLocales = () => {
   const locales = availableLocales
   console.log(locale.value)
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
+
+const gotoGitHub = () => {
+  window.open('https://github.com/xiaoluoboding/nuxt3-starter')
 }
 </script>
