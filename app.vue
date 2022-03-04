@@ -95,7 +95,7 @@
           <p>Vue i18n examples:</p>
           <ul class="list-inside list-disc pt-1 pl-2">
             <li>
-              {{ t('hello', { name: "Nuxt 3 Stater" }) }}
+              {{ t('hello', { name: "A Better Nuxt 3 Starter" }) }}
             </li>
             <li>
               {{ t('menu.home') }}
