@@ -4,6 +4,10 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    'Carbon:language': typeof import('~icons/carbon/language')['default']
+    'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']
+    'Carbon:moon': typeof import('~icons/carbon/moon')['default']
+    'Carbon:sun': typeof import('~icons/carbon/sun')['default']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
   }
 }

@@ -12,7 +12,7 @@
               fill="#00DC82" />
           </svg>
           <div class="ml-4">
-            <h1 text="2xl">NuxtJS Starter</h1>
+            <h1 text="2xl">A Better Nuxt 3 Starter</h1>
           </div>
         </div>
         <div class="mt-4 bg-white dark:bg-sky-darker overflow-hidden shadow sm:rounded-lg">
@@ -81,7 +81,7 @@
           <p>Some usefull examples:</p>
           <ul class="list-inside list-disc pt-1 pl-2">
             <li>
-              Use Pinia manage Store <button class="text-primary px-2 py-1 bg-sky-dark focus:outline-transparent rounded-sm" @click="counterStore.increment">Counter {{ counterStore.n }}</button>
+              Use Pinia manage Store <button class="text-primary px-2 py-1 bg-sky-darker dark:bg-sky-dark focus:outline-transparent rounded-sm" @click="counterStore.increment">Counter {{ counterStore.n }}</button>
             </li>
             <li>
               Create a Serverless Functions in <a class="text-primary hover:underline" href="api/hello?name=World" target="_blank">server/api.ts</a>
@@ -93,7 +93,6 @@
         <div
           class="mt-4 text-sm bg-white border-l-8 border-cloud-light dark:bg-sky-darker dark:border-sky overflow-hidden shadow sm:rounded-lg p-6 pl-4">
           <p>Vue i18n examples:</p>
-          <button class="text-primary px-2 py-1 bg-sky-dark focus:outline-transparent rounded-sm" @click="toggleLocales">Toggle Language</button>
           <ul class="list-inside list-disc pt-1 pl-2">
             <li>
               {{ t('hello', { name: "Nuxt 3 Stater" }) }}
@@ -102,6 +101,16 @@
               {{ t('menu.home') }}
             </li>
           </ul>
+        </div>
+
+        <div class="py-8 flex justify-center items-center space-x-2">
+          <button class="text-primary px-2 py-1 bg-sky-darker dark:bg-sky-dark focus:outline-transparent rounded-sm" @click="toggleLocales">
+            <carbon:language class="h-5 w-5" />
+          </button>
+          <button class="text-primary px-2 py-1 bg-sky-darker dark:bg-sky-dark focus:outline-transparent rounded-sm" @click="e => toggleDark()">
+            <carbon:sun class="h-5 w-5" v-if="isDark" />
+            <carbon:moon class="h-5 w-5" v-else />
+          </button>
         </div>
       </div>
     </div>
@@ -115,6 +124,7 @@
 <script lang="ts" setup>
 import { useCounter } from './store/counter'
 import { useI18n } from 'vue-i18n'
+import { isDark, toggleDark } from './composables/dark'
 
 const { t, locale, availableLocales } = useI18n()
 const counterStore = useCounter()

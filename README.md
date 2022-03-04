@@ -1,6 +1,6 @@
 # Nuxt 3 Starter
 
-> 💚 A better nuxt3 starter template
+> 💚 A Better Nuxt 3 starter template
 
 ## Features
 
@@ -8,6 +8,7 @@
 * 🍍 [@pinia/nuxt](https://pinia.esm.dev/ssr/nuxt.html) - Using Pinia with Nuxt.js 3
 * 🤹 [unplugin-icons](https://github.com/antfu/unplugin-icons) - Use icons from any iconsets
 * 🌍 [@intlify/nuxt3](https://github.com/intlify/nuxt3) - Nuxt 3 Module for vue-i18n-next
+* 🛠️ [@vueuse/nuxt3](https://vueuse.org/nuxt/readme.html#vueuse-nuxt) - This is an add-on of VueUse, which provides better Nuxt integration auto-import capabilities.
 
 ## Use the Template
 

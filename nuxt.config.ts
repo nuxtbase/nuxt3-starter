@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
+    '@vueuse/nuxt',
     [
       '@intlify/nuxt3',
       {

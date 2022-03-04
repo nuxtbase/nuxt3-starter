@@ -18,6 +18,7 @@
     "unplugin-vue-components": "^0.17.21"
   },
   "dependencies": {
+    "@vueuse/nuxt": "^7.7.0",
     "pinia": "^2.0.11"
   }
 }
