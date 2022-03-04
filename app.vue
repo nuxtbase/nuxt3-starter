@@ -65,6 +65,7 @@
             <li>Create a <code class="text-primary">pages/index.vue</code></li>
           </ul>
         </div>
+        <!-- Plugins -->
         <div
           class="mt-4 text-sm bg-white border-l-8 border-cloud-light dark:bg-sky-darker dark:border-sky overflow-hidden shadow sm:rounded-lg p-6 pl-4">
           <p>Plugins</p>
@@ -74,6 +75,7 @@
             <li><a class="text-primary hover:underline" href="https://github.com/antfu/unplugin-icons">unplugin-icons</a></li>
           </ul>
         </div>
+        <!-- Pinia -->
         <div
           class="mt-4 text-sm bg-white border-l-8 border-cloud-light dark:bg-sky-darker dark:border-sky overflow-hidden shadow sm:rounded-lg p-6 pl-4">
           <p>Some usefull examples:</p>
@@ -84,6 +86,20 @@
             <li>
               Create a Serverless Functions in <a class="text-primary hover:underline" href="api/hello?name=World" target="_blank">server/api.ts</a>
               <code>{{ data }}</code>
+            </li>
+          </ul>
+        </div>
+        <!-- Vue i18n -->
+        <div
+          class="mt-4 text-sm bg-white border-l-8 border-cloud-light dark:bg-sky-darker dark:border-sky overflow-hidden shadow sm:rounded-lg p-6 pl-4">
+          <p>Vue i18n examples:</p>
+          <button class="text-primary px-2 py-1 bg-sky-dark focus:outline-transparent rounded-sm" @click="toggleLocales">Toggle Language</button>
+          <ul class="list-inside list-disc pt-1 pl-2">
+            <li>
+              {{ t('hello', { name: "Nuxt 3 Stater" }) }}
+            </li>
+            <li>
+              {{ t('menu.home') }}
             </li>
           </ul>
         </div>
@@ -98,7 +114,9 @@
 
 <script lang="ts" setup>
 import { useCounter } from './store/counter'
+import { useI18n } from 'vue-i18n'
 
+const { t, locale, availableLocales } = useI18n()
 const counterStore = useCounter()
 
 const messages = {
@@ -116,4 +134,11 @@ const { data } = await useAsyncData('/api/hello', () => {
     }
   })
 })
+
+const toggleLocales = () => {
+  // change to some real logic
+  const locales = availableLocales
+  console.log(locale.value)
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
 </script>

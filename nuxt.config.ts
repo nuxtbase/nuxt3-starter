@@ -3,13 +3,22 @@ import ViteComponents from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
-  server: {
-    port: 3088,
+  meta: {
+    title: 'A Better Nuxt 3 Starter',
   },
   buildModules: [
     'nuxt-windicss',
     '@pinia/nuxt',
-    'unplugin-icons/nuxt'
+    'unplugin-icons/nuxt',
+    [
+      '@intlify/nuxt3',
+      {
+        localeDir: 'locales',
+        vueI18n: {
+          locale: 'en'
+        }
+      }
+    ]
   ],
   windicss: {
     analyze: true,
@@ -25,9 +34,5 @@ export default defineNuxtConfig({
         dts: true,
       }),
     ],
-  },
-  i18n: {
-    locales: ['en', 'zh'],
-    defaultLocale: 'en',
   },
 })
