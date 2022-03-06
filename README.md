@@ -25,9 +25,14 @@
 ### Clone to local
 
 ```bash
-$> npx degit xiaoluoboding/nuxt3-starter my-nuxt3-app
-$> cd my-nuxt3-app
-$> yarn install
+$> npx nuxi init -t xiaoluoboding/nuxt3-starter my-nuxt3-app
+$> 🎉  Another rad Nuxt project just made! Next steps:
+$>
+$>    📁  `cd my-nuxt3-app`
+$>
+$>    💿  Install dependencies with `npm install` or `yarn install`
+$>
+$>    🚀  Start development server with `npm run dev` or `yarn dev`
 ```
 
 ## Setup
@@ -42,7 +47,7 @@ yarn install
 
 ### Development
 
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:3088
 
 ```bash
 yarn dev
