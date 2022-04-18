@@ -63,7 +63,7 @@ yarn build
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
 
-## Related Tempalte
+## Related Template
 
 * [vue3-starter](https://github.com/xiaoluoboding/vue3-starter) - 🖖 A Better Vue 3 Starter Template，generate by `create-vue`.
 
