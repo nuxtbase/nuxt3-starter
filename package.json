@@ -15,7 +15,7 @@
     "@pinia/nuxt": "^0.1.8",
     "@vueuse/nuxt": "^7.7.0",
     "nuxt-windicss": "^2.2.8",
-    "nuxt3": "3.0.0-27439163.9f506de",
+    "nuxt3": "^3.0.0-rc.2",
     "unplugin-icons": "^0.13.2",
     "unplugin-vue-components": "^0.17.21"
   },
