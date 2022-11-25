@@ -3,23 +3,26 @@
   "description": "A better nuxt3 starter template",
   "private": false,
   "scripts": {
-    "dev": "nuxi dev --port 3088",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
-    "preview": "nuxi preview",
-    "updateall": "yarn upgrade-interactive --latest"
+    "dev": "nuxt dev --port 6636",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "serve": "esno .output/server/index.mjs",
+    "p:ish": "pnpm install --shamefully-hoist",
+    "p:up": "pnpm up"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.10",
-    "@intlify/nuxt3": "^0.1.10",
-    "@pinia/nuxt": "^0.1.8",
-    "@vueuse/nuxt": "^7.7.0",
-    "nuxt-windicss": "^2.2.8",
-    "nuxt3": "3.0.0-27480376.fdd38f9",
-    "unplugin-icons": "^0.13.2",
-    "unplugin-vue-components": "^0.17.21"
+    "@iconify/json": "^2.1.143",
+    "@intlify/nuxt3": "^0.2.4",
+    "@pinia/nuxt": "^0.4.5",
+    "@vueuse/nuxt": "^9.6.0",
+    "nuxt-windicss": "^2.5.5",
+    "nuxt": "^3.0.0",
+    "unplugin-icons": "^0.14.14",
+    "unplugin-vue-components": "^0.22.11"
   },
   "dependencies": {
-    "pinia": "^2.0.11"
+    "pinia": "^2.0.26"
   }
 }
