@@ -15,9 +15,9 @@
                 <li>
                   <a
                     class="text-primary hover:underline"
-                    href="https://github.com/windicss/nuxt-windicss"
+                    href="https://unocss.dev/integrations/nuxt"
                     target="_blank"
-                    >nuxt-windicss</a
+                    >@unocss/nuxt</a
                   >
                 </li>
                 <li>
@@ -62,7 +62,7 @@
               <h1 class="font-medium text-2xl">Pinia</h1>
               <h2 class="text-base">Use Pinia manage store</h2>
               <button
-                class="text-primary px-2 py-1 focus:outline-transparent rounded-lg border border-[#00DC82]"
+                class="text-primary bg-transparent px-2 py-1 focus:outline-transparent rounded-lg border border-[#00DC82]"
                 @click="counterStore.increment"
               >
                 Counter {{ counterStore.n }}
@@ -109,14 +109,14 @@
           >
             <div class="">
               <button
-                class="hover:text-primary px-2 py-1 focus:outline-transparent rounded-sm"
+                class="bg-transparent hover:text-primary px-2 py-1 focus:outline-transparent rounded-sm"
                 @click="toggleLocales"
               >
                 <carbon:language class="h-5 w-5" />
               </button>
               <ClientOnly>
                 <button
-                  class="px-2 py-1 focus:outline-transparent rounded-sm bg-white dark:bg-black text-black dark:text-white rounded-md hover:text-primary"
+                  class="bg-transparent px-2 py-1 focus:outline-transparent rounded-sm bg-white dark:bg-black text-black dark:text-white rounded-md hover:text-primary"
                   @click="(e) => toggleDark()"
                 >
                   <carbon:moon class="h-5 w-5" v-if="isDark" />
@@ -124,7 +124,7 @@
                 </button>
               </ClientOnly>
               <button
-                class="hover:text-primary px-2 py-1 focus:outline-transparent rounded-sm"
+                class="bg-transparent hover:text-primary px-2 py-1 focus:outline-transparent rounded-sm"
                 @click="(e) => gotoGitHub()"
               >
                 <carbon:logo-github class="h-5 w-5" />
@@ -163,7 +163,7 @@ const toggleLocales = () => {
 }
 
 const gotoGitHub = () => {
-  window.open('https://github.com/xiaoluoboding/nuxt3-starter')
+  window.open('https://github.com/nuxtbase/nuxt3-starter')
 }
 </script>
 

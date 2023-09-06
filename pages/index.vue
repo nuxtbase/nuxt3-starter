@@ -1,4 +1,9 @@
 <template>
-  <!-- Nuxt automatically imports any components in your components/ directory -->
-  <NuxtDemo />
+  <div>
+    <NuxtDemo />
+  </div>
 </template>
+
+<script lang="ts" setup></script>
+
+<style scoped></style>

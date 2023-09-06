@@ -13,16 +13,16 @@
     "p:up": "pnpm up"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.143",
+    "@iconify/json": "^2.2.112",
     "@intlify/nuxt3": "^0.2.4",
-    "@pinia/nuxt": "^0.4.5",
-    "@vueuse/nuxt": "^9.6.0",
-    "nuxt-windicss": "^2.5.5",
-    "nuxt": "^3.0.0",
-    "unplugin-icons": "^0.14.14",
-    "unplugin-vue-components": "^0.22.11"
-  },
-  "dependencies": {
-    "pinia": "^2.0.26"
+    "@nuxt/devtools": "latest",
+    "@pinia/nuxt": "^0.4.11",
+    "@unocss/nuxt": "^0.55.7",
+    "@unocss/reset": "^0.55.7",
+    "@vueuse/nuxt": "^10.4.1",
+    "nuxt": "^3.7.1",
+    "pinia": "^2.1.6",
+    "unplugin-icons": "^0.17.0",
+    "unplugin-vue-components": "^0.25.2"
   }
 }
