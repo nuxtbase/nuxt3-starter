@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.112",
-    "@intlify/nuxt3": "^0.2.4",
     "@nuxt/devtools": "latest",
     "@pinia/nuxt": "^0.4.11",
     "@unocss/nuxt": "^0.55.7",

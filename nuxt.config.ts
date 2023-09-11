@@ -15,16 +15,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
-    '@vueuse/nuxt',
-    [
-      '@intlify/nuxt3',
-      {
-        localeDir: 'locales',
-        vueI18n: {
-          locale: 'en'
-        }
-      }
-    ]
+    '@vueuse/nuxt'
   ],
   vite: {
     plugins: [

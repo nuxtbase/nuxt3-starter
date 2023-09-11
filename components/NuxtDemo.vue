@@ -87,33 +87,11 @@
               <code>{{ data }}</code>
             </div>
           </div>
-          <!-- Vue i18n -->
-
-          <div class="rounded p-4 gradient-border">
-            <div class="mb-4">
-              <h1 class="font-medium text-2xl">Vue i18n</h1>
-            </div>
-
-            <ul class="list-inside list-disc pt-1 pl-2">
-              <li>
-                {{ t('hello', { name: 'A Better Nuxt 3 Starter' }) }}
-              </li>
-              <li>
-                {{ t('menu.home') }}
-              </li>
-            </ul>
-          </div>
 
           <div
             class="rounded p-4 gradient-border py-8 flex justify-center items-center space-x-2"
           >
             <div class="">
-              <button
-                class="bg-transparent hover:text-primary px-2 py-1 focus:outline-transparent rounded-sm"
-                @click="toggleLocales"
-              >
-                <carbon:language class="h-5 w-5" />
-              </button>
               <ClientOnly>
                 <button
                   class="bg-transparent px-2 py-1 focus:outline-transparent rounded-sm bg-white dark:bg-black text-black dark:text-white rounded-md hover:text-primary"
@@ -138,12 +116,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
-
 import { useCounter } from '@/store/counter'
 import { isDark, toggleDark } from '@/composables/dark'
 
-const { t, locale, availableLocales } = useI18n()
 const counterStore = useCounter()
 
 // fetch data from server/api
@@ -154,13 +129,6 @@ const { data } = await useAsyncData('/api/hello', () => {
     }
   })
 })
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  console.log(locale.value)
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
 
 const gotoGitHub = () => {
   window.open('https://github.com/nuxtbase/nuxt3-starter')
