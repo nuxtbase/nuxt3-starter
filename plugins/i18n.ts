@@ -1,18 +1,18 @@
 import { createI18n } from 'vue-i18n'
-import en from '../locales/en.json'
-import zh from '../locales/zh-CN.json'
-import ja from '../locales/ja.json'
 
-export default defineNuxtPlugin(({ vueApp }) => {
+export default defineNuxtPlugin(async ({ vueApp }) => {
+  const locales = ['en', 'zh-CN', 'ja']
+
+  const messages: any = {}
+
+  for (const locale of locales) {
+    messages[locale] = await import(`../locales/${locale}.json`)
+  }
   const i18n = createI18n({
     legacy: false,
     globalInjection: true,
     locale: 'en',
-    messages: {
-      en,
-      ja,
-      zh
-    }
+    messages
   })
 
   vueApp.use(i18n)
